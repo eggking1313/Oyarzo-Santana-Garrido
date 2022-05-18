@@ -1,0 +1,6 @@
+ROBERTO ANDRES GARRIDO AGUILAR
+cargo: crear inicio
+RODRIGO FABIAN SANTANA OJEDA
+cargo: crear página de contacto y css
+DANIELA ALEJANDRA OYARZO JARA
+cargo: crear página de catalogo
