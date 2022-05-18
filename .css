@@ -1,0 +1,76 @@
+h1{
+    text-align: center;
+
+
+
+
+
+}
+body{
+    background-color:#f86300;
+
+    opacity: 0.6;
+    
+    
+    
+
+
+
+
+
+}
+
+img {
+    margin-left: 200px;
+    
+    
+}
+
+#caja2 {
+    text-align: center;
+    background-color: yellow;
+    border-style: solid;
+    border-width: 7px;
+    border-color: black;
+   
+   
+}
+#caja2 nav input {
+    color: rgb(0, 0, 0);
+    background-color: #CA054D;
+    padding: 10px 24px;
+    border: 2px solid #CA054D;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#caja2 nav input:hover {
+    color: black;
+    background-color: white;
+}
+.clearfix {
+    text-align: start;
+}
+footer{
+    border-style: solid;
+    border-width: 7px;
+    border-color: black;
+    text-align: center;
+    background-color: yellow;
+
+
+
+
+}
+aside {
+    width: 450px;
+    height:500px;
+    background-color: brown;
+    float: left;
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
