@@ -1,0 +1,50 @@
+body{
+    background-image: url(soft.jpg);
+    
+}
+h2{
+    color: darkorange;
+    text-align: center;
+    margin-top: 3cm;
+    
+}
+form{
+    color: darkorange;
+}
+tr{
+    color: darkorange;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    
+    
+    
+}
+input, textarea {
+    width:280px;
+    height:17px;
+    background:#8d3838;
+    border:2px inset #b40000;
+    padding:10px;
+    margin-top:5px;
+    font-size:15px;
+    color:#00fa2a;
+}
+#boton {
+    width:85px;
+    height:35px;
+    border:solid;
+    border-color: darkred;
+    background-color:darkorange;
+    margin-top:20px;
+    cursor: pointer;
+}
+#boton1{
+    width:85px;
+    height:35px;
+    border:solid;
+    border-color: darkred;
+    background-color:darkorange;
+    margin-left: 24cm;
+    cursor: pointer;
+
+}

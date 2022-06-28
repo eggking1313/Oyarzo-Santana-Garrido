@@ -1,44 +1,80 @@
 <!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <link rel="stylesheet" href=".css"/> 
+    <title>Evaluacion 3 </title>
 
-<html>
-<head>
-    <title>En su puerta ahora</title>
-    <link rel="stylesheet" href="ensup.css"/>  
-</head>
-
-<body>
-<header><h1>EN SU PUERTA AHORA</h1>
-</header>
-<div id="caja2">
-<nav>
-   <a href="index.html">
-        <input type="button" value="INICIO">
-    </a>
-    <a href="catalogo.html">
-        <input type="button" value="CATALOGO">
-    </a>
-    <a href="contacto.html">
-        <input type="button" value="CONTACTO">
-    </a>
-</nav>
-</div>
-
-<aside>
-    <h3>LOS MEJORES BAJONES A LA PUERTA DE TU CASA</h3>
-    <p>
-        VISITA NUESTRO CATÁLOGO Y ELIGE EL MENÚ QUE MÁS TE ACOMODE <b> CON LOS MEJORES PRECIOS DE LA CIUDAD</p>
+  </head>
+  <body>
+    <div class="contenedor">
+      
+      <h2 id="subtitulo">INGRESE SOFTWARE</h2>
+      
+      <button id="boton1" class="btn bnt-info" >CAMBIAR COLOR</button>
+    </div>
+    <div class="container py-2">
     
-    </aside>
+    <form >
+      <input id="software" type="text" placeholder="software" class="form-control my-2">
+      <input id="empresa" type="text" placeholder="empresa" class="form-control my-2">
+      <input id="usuario" type="text" placeholder="usuario" class="form-control my-2">
+      <button id="boton" type="reset" onclick="capturar();"  class="btn bnt-success">agregar</button>
+    </form>
+    </div>
 
-<div id="delivery_imagen">
-<img src="delivery.jpeg">
+
+
+    <div class="container">
+      <table class="table" id="tabla">
+        <thead class="thead-inverse">
+          <tr>
+            <th>|software|</th>
+            <th>|empresa|</th>
+            <th>|usuario|</th> 
+          </tr>
+        </thead>
+      </table>
+
 </div>
+    <script >
+      function capturar(){
+        console.log("capturado");
+        function Persona(software, empresa, usuario){
+          this.software=software;
+          this.empresa=empresa;
+          this.usuario=usuario;
+        }
+        var capturarsoftware=document.getElementById("software").value;
+        console.log(capturarsoftware);
+        var capturarempresa=document.getElementById("empresa").value;
+        console.log(capturarempresa);
+        var capturarusuario=document.getElementById("usuario").value;
+        console.log(capturarusuario);
+        sujeto= new Persona(capturarsoftware, capturarempresa, capturarusuario,);
+        agregar();
+      }
+      var basedatos=[];
+      function agregar(){
+        basedatos.push(sujeto)
+        console.log(basedatos);
+        document.getElementById("tabla").innerHTML += '<tbody><td>'+sujeto.software+'</td><td>'+sujeto.empresa+'</td><td>'+sujeto.usuario+'</td></tbody>';
+      };
+    </script>
 
 
+  <script>
+    
+    var h2=document.getElementById("subtitulo");
+    console.log(h2.innerHTML);
+    
+    var boton1 = document.getElementById("boton1");
+    boton1.onclick=function(){
 
- 
-<div class="clearfix">
-<footer>EN SU PUERTA AHORA</footer>
-</div>
-</body>
-</html>
+      h2.style.color="black";
+      h2.style.background="green";
+    }
+  </script>
+
+
+  </body>
+</html
